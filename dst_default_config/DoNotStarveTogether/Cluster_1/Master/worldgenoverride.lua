@@ -2,6 +2,10 @@ return {
 	override_enabled = true,
 	preset = "SURVIVAL_TOGETHER", 			-- "SURVIVAL_TOGETHER", "MOD_MISSING", "SURVIVAL_TOGETHER_CLASSIC", "SURVIVAL_DEFAULT_PLUS", "COMPLETE_DARKNESS", "DST_CAVE", "DST_CAVE_PLUS"
 	overrides = {
+		basicresource_regrowth = "always",
+		portalresurection = "always",
+		resettime = "none",
+
 		-- MISC
 		task_set = "default", 			-- "classic", "default", "cave_default"
 		start_location = "default", 	-- "caves", "default", "plus", "darkness"
@@ -19,7 +23,7 @@ return {
 		earthquakes = "default", 		-- "never", "rare", "default", "often", "always"
 		lightning = "default", 			-- "never", "rare", "default", "often", "always"
 		frograin = "default", 			-- "never", "rare", "default", "often", "always"
-		wildfires = "default", 			-- "never", "rare", "default", "often", "always"
+		wildfires = "never", 			-- "never", "rare", "default", "often", "always"
 		regrowth = "default", 			-- "veryslow", "slow", "default", "fast", "veryfast"
 		touchstone = "default", 		-- "never", "rare", "default", "often", "always"
 		boons = "default", 				-- "never", "rare", "default", "often", "always"
