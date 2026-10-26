@@ -9,3 +9,14 @@
 	--The Workshop id can be found at the end of the url to the collection's Workshop page.
 	--Example: http://steamcommunity.com/sharedfiles/filedetails/?id=379114180
 	--ServerModCollectionSetup("379114180")
+
+ServerModSetup("362175979") --wormhole marks
+ServerModSetup("1185229307") --epic healthbar
+ServerModSetup("501387482") --empty inventory w whitelist
+ServerModSetup("378160973") --global positions
+ServerModSetup("1998081438") --stack drops
+ServerModSetup("2189004162") --insight show me plus
+ServerModSetup("2256629044") --drop when leaving
+ServerModSetup("2843221585") --salt lick mod
+ServerModSetup("2477889104") --beefalo status bar
+ServerModSetup("1378549454") -- gem api core
