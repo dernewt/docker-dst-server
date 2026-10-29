@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=debian:buster-slim
+ARG BASE_IMAGE=debian:trixie-slim
 FROM $BASE_IMAGE
 LABEL maintainer="James Swineson <docker@public.swineson.me>"
 
