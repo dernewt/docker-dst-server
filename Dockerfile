@@ -18,6 +18,7 @@ RUN dpkg --add-architecture i386 \
     && apt-get install -y --no-install-recommends ca-certificates lib32stdc++6 libcurl3-gnutls:i386 libcurl3-gnutls wget tar supervisor \
     && (apt-get install -y --no-install-recommends lib32gcc-s1 || apt-get install -y --no-install-recommends lib32gcc1) \
     && apt-get autoremove -y \
+    && apt-get dos2unix -y \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 
@@ -42,7 +43,7 @@ RUN test -e "${STEAMCMD_PATH}" && echo "Steamcmd detected" \
 COPY supervisor /etc/supervisor/
 COPY scripts_system /usr/local/bin/
 COPY scripts_steam /opt/steamcmd_scripts/
-RUN chmod +x /usr/local/bin/*
+RUN dos2unix /usr/local/bin/* && chmod +x /usr/local/bin/*
 
 # install Don't Starve Together server
 RUN mkdir -p /opt/dst_server \
